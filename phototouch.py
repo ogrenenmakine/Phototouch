@@ -267,7 +267,7 @@ def analyze(canvas):
         counter = counter + 1
     counter = 0
     for obj in cobj:
-        obj = canvas.create_rectangle(r['rois'][counter][3], r['rois'][counter][2], r['rois'][counter][1], r['rois'][counter][0], outline='lightyellow', fill='gray', stipple='@transparent.xbm', width=2)
+        obj = canvas.create_rectangle(r['rois'][counter][3], r['rois'][counter][2], r['rois'][counter][1], r['rois'][counter][0], outline='lightyellow', fill='gray', stipple='@docs/transparent.xbm', width=2)
         A = np.multiply(image[:,:,0],r['masks'][:,:,counter]);
         B = np.multiply(image[:,:,1],r['masks'][:,:,counter]);
         C = np.multiply(image[:,:,2],r['masks'][:,:,counter]);
